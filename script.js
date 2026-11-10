@@ -10,6 +10,22 @@ function convertToRoman(num) {
     };
 
   //your code here
+	const romanMatrix = [
+    obj[0], 
+    ['CM', 900],
+    obj[1], 
+    ['CD', 400],
+    obj[2], 
+    ['XC', 90],
+    obj[3], 
+    ['XL', 40],
+    obj[4], 
+    ['IX', 9],
+    obj[5], 
+    ['IV', 4],
+    obj[6]  
+  ];
+	
 	let result = "";
 	for(const [symbol, value] of romanMatrix){
 		while (num >= value){
